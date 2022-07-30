@@ -68,6 +68,13 @@ body {
     text-align: center;
     border: 3px solid #111111;
     border-radius: 10px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .button:hover {
