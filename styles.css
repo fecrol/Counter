@@ -49,20 +49,20 @@ body {
 
 .content-container-footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 1rem;
 }
 
 .button-container {
-    width: 60%;
+    width: 80%;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
 }
 
 .button {
     padding: 0.5rem;
-    width: 25%;
+    margin-bottom: 0.5rem;
+    width: 60%;
     font-size: 1.2rem;
     text-transform: uppercase;
     text-align: center;
@@ -80,11 +80,27 @@ body {
     .content-container {
         width: 60%;
     }
+
+    .button-container {
+        width: 60%;
+    }
 }
 
 @media (min-width:1000px) {
 
     .content-container {
-        width: 60%;
+        width: 80%;
+    }
+
+    .button-container {
+        justify-content: space-evenly;
+    }
+
+    .button-container {
+        flex-direction: row;
+    }
+    
+    .button {
+        width: 25%;
     }
 }
